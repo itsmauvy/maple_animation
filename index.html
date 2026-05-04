@@ -10,20 +10,28 @@
   <div class="wrap">
     <section class="hero-section">
       <img class="sky" src="./images/twinkling star.png" alt="별빛하늘">
-      <img class="main-bg" src="./images/final_resize_no_logo.png" alt="히어로이미지">
+      <img class="main-bg" src="./images/heroimage_nologo.jpg" alt="히어로이미지">
       <img class="meteor meteor1" src="./images/meteor.png" alt="유성">
       <img class="meteor meteor2" src="./images/meteor.png" alt="유성">
 
       <img class="anniversary" src="./images/1st_anniversary_cutout.png" alt="1주년">
 
+      <a class="hero-grass-cta" href="#">게임 다운로드</a>
+      <button class="bgm-toggle" type="button" aria-label="BGM 켜기" aria-pressed="false">
+        <span aria-hidden="true">♪</span>
+      </button>
+      <audio id="bgm" src="./audio/bgm.mp3" loop preload="auto"></audio>
+
       <header>
         <h1 class="logo">
-          <img src="./images/maple logo.png" alt="로고">
+          <a href="./index.html">
+            <img src="./images/maple logo.png" alt="메이플키우기">
+          </a>
         </h1>
 
         <nav class="gnb">
           <ul>
-            <li><a href="#">게임 소개</a></li>
+            <li><a href="./game-intro.html">게임 소개</a></li>
             <li><a href="#">새소식</a></li>
             <li><a href="#">커뮤니티</a></li>
             <li><a href="#">고객지원</a></li>
@@ -34,5 +42,23 @@
       </header>
     </section>
   </div>
+  <script>
+    const bgm = document.querySelector("#bgm");
+    const bgmToggle = document.querySelector(".bgm-toggle");
+
+    bgm.volume = 0.35;
+
+    bgmToggle.addEventListener("click", async () => {
+      if (bgm.paused) {
+        await bgm.play();
+        bgmToggle.setAttribute("aria-label", "BGM 끄기");
+        bgmToggle.setAttribute("aria-pressed", "true");
+      } else {
+        bgm.pause();
+        bgmToggle.setAttribute("aria-label", "BGM 켜기");
+        bgmToggle.setAttribute("aria-pressed", "false");
+      }
+    });
+  </script>
 </body>
 </html>
