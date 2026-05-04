@@ -72,12 +72,12 @@ header {position: absolute; top: 30px;left: 50%; transform: translateX(-50%);wid
 .download-cta:hover {color: #2c1800;transform: translateY(-5px);box-shadow: 0 6px 0 #8b4800, 0 0 18px rgba(255,234,112,1), 0 11px 22px rgba(0,0,0,0.5);text-shadow: 0 1px 0 rgba(255,255,255,0.85);}
 
 
-.anniversary {position: absolute; top: clamp(56px, 5.8vw, 86px);left: 50%;transform: translateX(-50%) scale(1);width: clamp(250px, 23vw, 360px);z-index: 22;opacity: 1;animation: anniversaryPop 0.9s cubic-bezier(.2,1.35,.32,1) 0.2s both, anniversaryFloat 3.2s ease-in-out 1.2s infinite alternate;transform-origin: center center;pointer-events: none;}
+.anniversary {position: absolute; top: clamp(28px, 4.2vw, 54px);left: 50%;transform: translateX(-50%);translate: 0 0;scale: 1;width: clamp(220px, 18vw, 320px);z-index: 22;opacity: 1;animation: anniversaryPop 0.9s cubic-bezier(.2,1.35,.32,1) 0.2s both, anniversaryFloat 3.2s ease-in-out 1.2s infinite alternate;transform-origin: center center;pointer-events: none;}
 
-.hero-grass-cta {position: absolute;left: 50%;bottom: clamp(18px, 4vh, 38px);z-index: 24;display: inline-flex;align-items: center;justify-content: center;min-width: clamp(170px, 17vw, 250px);min-height: clamp(42px, 4.2vw, 58px);padding: 0 30px;color: #3d2400;background: linear-gradient(180deg, #fff8a8 0%, #ffd852 45%, #f39a24 100%);border: 3px solid #fff5b8;border-radius: 12px 12px 17px 17px;clip-path: polygon(8% 0, 92% 0, 100% 50%, 92% 100%, 8% 100%, 0 50%);box-shadow: 0 5px 0 #8b4800, 0 0 16px rgba(255,218,82,0.9), 0 10px 18px rgba(0,0,0,0.45);font-size: clamp(17px, 1.65vw, 25px);font-weight: 900;white-space: nowrap;text-shadow: 0 2px 0 rgba(255,255,255,0.8);transform: translateX(-50%);transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;}
+.hero-grass-cta {position: absolute;left: 50%;bottom: clamp(44px, 6vh, 76px);z-index: 40;display: inline-flex;align-items: center;justify-content: center;min-width: clamp(170px, 17vw, 250px);min-height: clamp(42px, 4.2vw, 58px);padding: 0 30px;color: #3d2400;background: linear-gradient(180deg, #fff8a8 0%, #ffd852 45%, #f39a24 100%);border: 3px solid #fff5b8;border-radius: 12px 12px 17px 17px;clip-path: polygon(8% 0, 92% 0, 100% 50%, 92% 100%, 8% 100%, 0 50%);box-shadow: 0 5px 0 #8b4800, 0 0 16px rgba(255,218,82,0.9), 0 10px 18px rgba(0,0,0,0.45);font-size: clamp(17px, 1.65vw, 25px);font-weight: 900;white-space: nowrap;text-shadow: 0 2px 0 rgba(255,255,255,0.8);transform: translateX(-50%);transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;}
 .hero-grass-cta:hover {transform: translateX(-50%) translateY(-6px);box-shadow: 0 10px 0 #8b4800, 0 0 28px rgba(255,235,104,1), 0 16px 28px rgba(0,0,0,0.55);filter: brightness(1.05);}
 
-.bgm-toggle {position: absolute;right: clamp(18px, 3vw, 48px);bottom: clamp(24px, 5vh, 54px);z-index: 25;width: 64px;height: 58px;padding: 0;color: #5a2700;background: linear-gradient(180deg, #fff7e2 0%, #ffd28b 100%);border: 3px solid #fff1b4;border-radius: 46% 46% 38% 38%;box-shadow: 0 5px 0 #8f4a09, 0 0 14px rgba(255,223,112,0.75), 0 9px 18px rgba(0,0,0,0.42);font-size: 28px;font-weight: 900;cursor: pointer;text-shadow: 0 2px 0 rgba(255,255,255,0.75);transition: transform 0.2s ease, filter 0.2s ease, box-shadow 0.2s ease;}
+.bgm-toggle {position: absolute;right: clamp(18px, 3vw, 48px);bottom: clamp(46px, 6.4vh, 84px);z-index: 41;width: 64px;height: 58px;padding: 0;color: #5a2700;background: linear-gradient(180deg, #fff7e2 0%, #ffd28b 100%);border: 3px solid #fff1b4;border-radius: 46% 46% 38% 38%;box-shadow: 0 5px 0 #8f4a09, 0 0 14px rgba(255,223,112,0.75), 0 9px 18px rgba(0,0,0,0.42);font-size: 28px;font-weight: 900;cursor: pointer;text-shadow: 0 2px 0 rgba(255,255,255,0.75);transition: transform 0.2s ease, filter 0.2s ease, box-shadow 0.2s ease;}
 .bgm-toggle::before {content: "";position: absolute;left: 50%;top: -18px;width: 78px;height: 42px;background: radial-gradient(circle at 28% 42%, #fff7c9 0 8%, transparent 9%), radial-gradient(circle at 60% 30%, #fff7c9 0 10%, transparent 11%), linear-gradient(180deg, #ff7b63 0%, #eb3d44 72%, #bd202f 100%);border: 3px solid #fff1b4;border-radius: 54% 54% 42% 42%;box-shadow: 0 5px 0 #8f1c28, 0 0 12px rgba(255,118,94,0.7);transform: translateX(-50%);}
 .bgm-toggle span {position: relative;z-index: 1;display: block;margin-top: 14px;}
 .bgm-toggle:hover {transform: translateY(-4px);filter: brightness(1.05);box-shadow: 0 8px 0 #8f4a09, 0 0 20px rgba(255,223,112,0.95), 0 13px 22px rgba(0,0,0,0.46);}
@@ -111,29 +111,35 @@ header {position: absolute; top: 30px;left: 50%; transform: translateX(-50%);wid
 
 @keyframes anniversaryPop {
     0% {
-        transform: translateX(-50%) translateY(22px) scale(0);
+        translate: 0 22px;
+        scale: 0;
         opacity: 0;
     }
     58% {
-        transform: translateX(-50%) translateY(-8px) scale(1.12);
+        translate: 0 -8px;
+        scale: 1.12;
         opacity: 1;
     }
     78% {
-        transform: translateX(-50%) translateY(3px) scale(0.96);
+        translate: 0 3px;
+        scale: 0.96;
         opacity: 1;
     }
     100% {
-        transform: translateX(-50%) translateY(0) scale(1);
+        translate: 0 0;
+        scale: 1;
         opacity: 1;
     }
 }
 
 @keyframes anniversaryFloat {
     0% {
-        transform: translateX(-50%) translateY(0) scale(1);
+        translate: 0 0;
+        scale: 1;
     }
     100% {
-        transform: translateX(-50%) translateY(-8px) scale(1.02);
+        translate: 0 -8px;
+        scale: 1.02;
     }
 }
 
@@ -174,7 +180,7 @@ header {position: absolute; top: 30px;left: 50%; transform: translateX(-50%);wid
     .gnb {position: static;grid-column: 1 / -1;justify-self: center;transform: none;}
     .gnb ul {gap: clamp(20px, 6vw, 48px);}
     .download-cta {position: static;justify-self: end;}
-    .anniversary {top: 112px;width: clamp(220px, 38vw, 300px);}
+    .anniversary {top: 92px;width: clamp(200px, 34vw, 270px);}
     .hero-message {top: 230px;}
     .meteor1 {left: -360px;}
     .meteor2 {left: -680px;}
@@ -193,9 +199,9 @@ header {position: absolute; top: 30px;left: 50%; transform: translateX(-50%);wid
     .gnb ul {justify-content: space-between;gap: 0;}
     .gnb li {font-size: 15px;}
     .gnb li a {padding: 7px 2px;}
-    .anniversary {top: 96px;width: 210px;}
-    .hero-grass-cta {bottom: 18px;min-width: 150px;min-height: 40px;padding: 0 20px;border-radius: 9px 9px 14px 14px;font-size: 15px;box-shadow: 0 4px 0 #8b4800, 0 0 13px rgba(255,218,82,0.85), 0 8px 14px rgba(0,0,0,0.45);}
-    .bgm-toggle {right: 14px;bottom: 78px;width: 52px;height: 48px;font-size: 22px;}
+    .anniversary {top: 82px;width: 190px;}
+    .hero-grass-cta {bottom: 42px;min-width: 150px;min-height: 40px;padding: 0 20px;border-radius: 9px 9px 14px 14px;font-size: 15px;box-shadow: 0 4px 0 #8b4800, 0 0 13px rgba(255,218,82,0.85), 0 8px 14px rgba(0,0,0,0.45);}
+    .bgm-toggle {right: 14px;bottom: 104px;width: 52px;height: 48px;font-size: 22px;}
     .bgm-toggle::before {top: -15px;width: 64px;height: 34px;}
     .bgm-toggle span {margin-top: 12px;}
     .hero-message {top: 218px;}
@@ -218,7 +224,7 @@ header {position: absolute; top: 30px;left: 50%; transform: translateX(-50%);wid
     .logo {width: 124px;}
     .download-cta {padding: 7px 10px;font-size: 14px;}
     .gnb li {font-size: 13px;}
-    .anniversary {top: 86px;width: 180px;}
+    .anniversary {top: 74px;width: 166px;}
     .hero-grass-cta {min-width: 136px;min-height: 38px;font-size: 14px;}
     .hero-message {top: 198px;}
 }
